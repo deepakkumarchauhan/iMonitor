@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IMLoginTableCell" rowHeight="66" id="KGk-i7-Jjw" customClass="IMLoginTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w68-oz-cgq">
+                        <rect key="frame" x="30" y="8" width="260" height="54"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gw0-Jz-zmn" customClass="IMTextField">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="54"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gw0-Jz-zmn" firstAttribute="leading" secondItem="w68-oz-cgq" secondAttribute="leading" id="1LM-2g-mYt"/>
+                            <constraint firstAttribute="trailing" secondItem="gw0-Jz-zmn" secondAttribute="trailing" id="ceX-D6-jfW"/>
+                            <constraint firstAttribute="bottom" secondItem="gw0-Jz-zmn" secondAttribute="bottom" id="n5l-MR-ef6"/>
+                            <constraint firstItem="gw0-Jz-zmn" firstAttribute="top" secondItem="w68-oz-cgq" secondAttribute="top" id="uc2-AE-Yka"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="w68-oz-cgq" secondAttribute="bottom" constant="7.5" id="HaF-oS-s9F"/>
+                    <constraint firstItem="w68-oz-cgq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="IaH-Bi-fgA"/>
+                    <constraint firstItem="w68-oz-cgq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="YXp-D0-Wfh"/>
+                    <constraint firstAttribute="trailing" secondItem="w68-oz-cgq" secondAttribute="trailing" constant="30" id="ZaH-bZ-YWY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="loginCellTextField" destination="gw0-Jz-zmn" id="1tV-nb-Qva"/>
+                <outlet property="viewContentCell" destination="gw0-Jz-zmn" id="2ie-eK-dPA"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="59"/>
+        </tableViewCell>
+    </objects>
+</document>

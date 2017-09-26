@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="enquiryContentCellID" rowHeight="119" id="KGk-i7-Jjw" customClass="IMEnquiryContentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="118.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-QY-ydE" customClass="IMTextView">
+                        <rect key="frame" x="43" y="7" width="514" height="104.5"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="YFM-D1-3gc"/>
+                        </connections>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jhe-QY-ydE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="43" id="3l3-7I-rz4"/>
+                    <constraint firstAttribute="trailing" secondItem="Jhe-QY-ydE" secondAttribute="trailing" constant="43" id="JdV-Fr-yjy"/>
+                    <constraint firstAttribute="bottom" secondItem="Jhe-QY-ydE" secondAttribute="bottom" constant="7" id="Ma1-aF-r94"/>
+                    <constraint firstItem="Jhe-QY-ydE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="v5C-Zs-Gro"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="enquiryTextView" destination="Jhe-QY-ydE" id="dTJ-fN-5DC"/>
+            </connections>
+            <point key="canvasLocation" x="-227" y="1"/>
+        </tableViewCell>
+    </objects>
+</document>
